@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: lovable-clone
+    description: Lovable Clone in Spring Boot 0 to 100 Course Cohort 4.0
