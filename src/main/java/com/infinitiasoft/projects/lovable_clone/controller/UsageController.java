@@ -24,7 +24,7 @@ public class UsageController {
     }
 
     @GetMapping("/limits")
-    public ResponseEntity<PlansLimitResponse> getTodayUsage(){
+    public ResponseEntity<PlansLimitResponse> getCurrentSubscriptionLimitsOfUser(){
         Long userId = 1L;
         return ResponseEntity.ok(usageService.getCurrentSubscriptionLimitsOfUser(userId));
 
