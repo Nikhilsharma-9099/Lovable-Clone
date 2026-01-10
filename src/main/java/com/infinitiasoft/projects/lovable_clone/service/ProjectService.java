@@ -13,8 +13,6 @@ import java.util.List;
 
 public interface ProjectService {
 
-    List<ProjectSummaryResponse> getMyProjects();
-
     List<ProjectSummaryResponse> getUserProjects(Long userId);
 
     ProjectResponse getUserProjectById(Long id, Long userId);

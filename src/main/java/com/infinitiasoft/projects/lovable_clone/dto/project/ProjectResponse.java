@@ -1,7 +1,5 @@
 package com.infinitiasoft.projects.lovable_clone.dto.project;
 
-import com.infinitiasoft.projects.lovable_clone.dto.auth.UserProfileResponse;
-
 import java.time.Instant;
 
 public record ProjectResponse(
@@ -9,6 +7,6 @@ public record ProjectResponse(
         String name,
         Instant createdAt,
         Instant updatedAt,
-        UserProfileResponse owner
+        com.infinitiasoft.projects.lovable_clone.enity.User owner
 ) {
 }
