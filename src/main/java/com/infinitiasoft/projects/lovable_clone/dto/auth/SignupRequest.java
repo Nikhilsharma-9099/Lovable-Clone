@@ -1,9 +1,13 @@
 package com.infinitiasoft.projects.lovable_clone.dto.auth;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public record SignupRequest (
-        String email,
-        String password,
-        String name
+        @Email @NotBlank String username,
+        @Size(min = 8, max = 18) String password,
+        @Size(min = 5, max = 30) String name
 ){
 
 }

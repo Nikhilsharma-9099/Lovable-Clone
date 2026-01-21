@@ -1,8 +1,9 @@
 package com.infinitiasoft.projects.lovable_clone.dto.member;
 
 import com.infinitiasoft.projects.lovable_clone.enums.ProjectRole;
-import org.antlr.v4.runtime.misc.NotNull;
+import jakarta.validation.constraints.NotNull;
 
-public record UpdateMemberRoleRequest(ProjectRole role) {
+public record UpdateMemberRoleRequest(
+        @NotNull ProjectRole role) {
 
 }
