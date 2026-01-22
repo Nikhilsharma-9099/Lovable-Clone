@@ -10,5 +10,5 @@ public interface AuthService {
 
     AuthResponse login(LoginRequest request);
 
-    UserProfileResponse getMe();
+//    UserProfileResponse getMe();
 }
