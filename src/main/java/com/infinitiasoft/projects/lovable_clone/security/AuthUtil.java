@@ -30,7 +30,7 @@ public class AuthUtil {
     public String generateToken(User user) {
         return Jwts.builder()
                 .subject(user.getUsername())
-                .claim("id", user.getId().toString())
+                .claim("userId", user.getId().toString())
                 .issuedAt(new Date())
                 .expiration(new Date(System.currentTimeMillis() + 60 * 10 * 1000))
                 .signWith(getJwtSecretKey())

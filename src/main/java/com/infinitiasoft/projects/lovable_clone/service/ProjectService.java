@@ -13,9 +13,9 @@ import java.util.List;
 
 public interface ProjectService {
 
-    List<ProjectSummaryResponse> getUserProjects();
+    List<ProjectSummaryResponse> getUserProjects(Long userId);
 
-    ProjectResponse getUserProjectById(Long id);
+    ProjectResponse getUserProjectById(Long projectId);
 
     ProjectResponse createProject(ProjectRequest request);
 
