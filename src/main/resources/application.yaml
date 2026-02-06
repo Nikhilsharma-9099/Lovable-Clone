@@ -23,3 +23,9 @@ spring:
 jwt:
   secret: nqeovnberoipgjhfejfbvsigfieragflWFpfNWRHGOWRNGOWYFBWRAWENFWJQVQACFw
 
+stripe:
+  api:
+    secret: ${STRIPE_SECRET_KEY}
+
+client.url: http://localhost:8080
+
