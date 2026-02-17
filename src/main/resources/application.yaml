@@ -20,12 +20,12 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
 
-jwt:
-  secret: nqeovnberoipgjhfejfbvsigfieragflWFpfNWRHGOWRNGOWYFBWRAWENFWJQVQACFw
+#jwt:
+#  secret: {}s
 
-stripe:
-  api:
-    secret: sk_test_51SwLh3SmRtEtKwn7hfcTzKOOyg2UPMpnUnW54aj9Pvki8rz4aaDFbFKffv2nBRo8nEw0m7AxEyInKuoSyZLbJrsd00ZnDouSgA
+#stripe:
+#  api:
+#    secret: {}
 
 client.url: http://localhost:8080
 
