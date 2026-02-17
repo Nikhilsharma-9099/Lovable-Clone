@@ -9,4 +9,5 @@ import org.jspecify.annotations.Nullable;
 public interface SubscriptionService {
     SubscriptionResponse getCurrentSubscription(Long userId);
 
+    void activateSubscription(Long userId, Long planId, String subscriptionId, String customerId);
 }

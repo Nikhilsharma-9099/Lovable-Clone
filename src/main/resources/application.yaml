@@ -25,7 +25,7 @@ jwt:
 
 stripe:
   api:
-    secret: ${STRIPE_SECRET_KEY}
+    secret: sk_test_51SwLh3SmRtEtKwn7hfcTzKOOyg2UPMpnUnW54aj9Pvki8rz4aaDFbFKffv2nBRo8nEw0m7AxEyInKuoSyZLbJrsd00ZnDouSgA
 
 client.url: http://localhost:8080
 
