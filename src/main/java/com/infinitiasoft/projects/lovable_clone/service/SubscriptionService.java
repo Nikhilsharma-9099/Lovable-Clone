@@ -1,13 +1,22 @@
 package com.infinitiasoft.projects.lovable_clone.service;
 
-import com.infinitiasoft.projects.lovable_clone.dto.subscription.CheckoutRequest;
-import com.infinitiasoft.projects.lovable_clone.dto.subscription.CheckoutResponse;
-import com.infinitiasoft.projects.lovable_clone.dto.subscription.PortalResponse;
 import com.infinitiasoft.projects.lovable_clone.dto.subscription.SubscriptionResponse;
-import org.jspecify.annotations.Nullable;
+import com.infinitiasoft.projects.lovable_clone.enums.SubscriptionStatus;
+
+import java.time.Instant;
 
 public interface SubscriptionService {
-    SubscriptionResponse getCurrentSubscription(Long userId);
+    SubscriptionResponse getCurrentSubscription();
 
     void activateSubscription(Long userId, Long planId, String subscriptionId, String customerId);
+
+    void updateSubscription(String gatewaySubscriptionId, Long planId, SubscriptionStatus status, Instant periodStart, Instant periodEnd, Boolean cancelAtPeriodEnd, Long planId1);
+
+    void cancelSubscription(String gatewaySubscriptionId);
+
+    void renewSubscriptionPeriod(String subscriptionId, Instant periodStart, Instant periodEnd);
+
+    void markSubscriptionAsPastDue(String subscriptionId);
+
+    boolean canCreateNewProject();
 }

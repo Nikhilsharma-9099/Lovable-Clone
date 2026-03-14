@@ -20,6 +20,7 @@ public class Plan {
 
     @Column(unique = true)
     String stripePriceId;
+
     Integer maxProjects;
     Integer maxTokensPerDay;
     Integer maxPreviews;
